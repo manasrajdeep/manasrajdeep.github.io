@@ -233,6 +233,3 @@ Command palette: `Cmd/Ctrl + K`. Konami code (`↑↑↓↓←→←→ b a`) an
 3. Make your changes and test locally with an HTTP server
 4. Open a pull request against `master`
 
-**If you find this project helpful, consider [supporting it](https://www.buymeacoffee.com/r194dME8y).**
-
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/r194dME8y)
