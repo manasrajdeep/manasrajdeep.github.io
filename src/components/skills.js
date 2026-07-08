@@ -5,7 +5,7 @@ import { skills } from "../../user-data/data.js";
 // Display-only grouping layered on top of the flat `skills` list in user-data/data.js
 // (kept flat there so the JSON generator tool's multi-select keeps working).
 const CATEGORIES = [
-  { category: "Languages & Frameworks", icon: "fa-solid fa-code", match: ["TypeScript", "Angular", "React", "Signals"] },
+  { category: "Languages & Frameworks", icon: "fa-solid fa-code", match: [ "Angular", "React", "Signals"] },
   { category: "State & Data", icon: "fa-solid fa-diagram-project", match: ["RxJS", "NgRx", "NGXS", "WebSockets"] },
   { category: "Architecture", icon: "fa-solid fa-layer-group", match: ["Nx", "Microfrontends", "Module Federation"] },
   { category: "Tooling & Quality", icon: "fa-solid fa-vial", match: ["Storybook", "Playwright"] },
@@ -21,7 +21,7 @@ function groupSkills() {
   }).filter((group) => group.items.length);
 
   if (remaining.size) {
-    groups.push({ category: "Other", icon: "fa-solid fa-star", items: [...remaining] });
+    groups.push({ category: "Languages & Frameworks", icon: "fa-solid fa-star", items: [...remaining] });
   }
   return groups;
 }
