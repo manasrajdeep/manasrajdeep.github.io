@@ -32,13 +32,11 @@ const heroTemplate = () => html`
         Open to interesting problems
       </p>
       <h1 class="hero-title" data-reveal>
-        Vinay Somawat
+        Manas Rajdeep
       </h1>
-      <p class="hero-role gradient-text-animated" data-reveal>Senior Frontend Engineer</p>
+      <p class="hero-role gradient-text-animated" data-reveal>Software Engineer</p>
       <p class="hero-description" data-reveal>
-        I build scalable web applications, design systems, AI-powered developer
-        experiences, and high-performance user interfaces — with Angular, React,
-        and TypeScript at the core.
+       I engineer high-performance backend systems, AI integrated enterprise SaaS, and automated data pipelines specializing in the MERN stack and advanced Python scripting.
       </p>
       <div class="hero-cta-row" data-reveal>
         <a

@@ -7,12 +7,10 @@ const COMMANDS = [
   { label: "Work Experience", target: "experience", icon: "fa-solid fa-briefcase", meta: "Section" },
   { label: "Skills", target: "skills", icon: "fa-solid fa-code", meta: "Section" },
   { label: "GitHub & Repositories", target: "github", icon: "fa-solid fa-code-branch", meta: "Section" },
-  { label: "Blog", target: "blog", icon: "fa-solid fa-pen", meta: "Section" },
   { label: "Adventures", target: "adventures", icon: "fa-solid fa-mountain-sun", meta: "Section" },
   { label: "Contact", target: "contact", icon: "fa-solid fa-envelope", meta: "Section" },
   { label: "Open GitHub Profile", href: URLs.githubProfile, icon: "fa-brands fa-github", meta: "External link" },
-  { label: "Open LinkedIn", href: "https://www.linkedin.com/in/vinaysomawat/", icon: "fa-brands fa-linkedin", meta: "External link" },
-  { label: "Open Medium", href: "https://vinaysomawat.medium.com/", icon: "fa-brands fa-medium", meta: "External link" },
+  { label: "Open LinkedIn", href: "https://www.linkedin.com/in/manasrajdeep/", icon: "fa-brands fa-linkedin", meta: "External link" },
   { label: "Download Resume", href: RESUME_URL, icon: "fa-solid fa-file-arrow-down", meta: "Action" },
   { label: "JSON Generator Tool", href: "./pages/json-generator.html", icon: "fa-solid fa-file-code", meta: "Tool" },
 ];

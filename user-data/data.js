@@ -1,206 +1,134 @@
 export const bio = [
-  "Senior Frontend Engineer — 5+ years turning complex product requirements into fast, maintainable Angular and React applications at scale.",
-  "I specialize in TypeScript, RxJS, NgRx, and Nx monorepos. I've led full AngularJS-to-Angular migrations, architected microfrontends with Module Federation, and shipped design systems adopted across multiple product teams.",
-  "When I'm not writing code, I'm crossing mountain passes — including Khardung La at 18,379 ft.",
+  "Results-driven Software Engineer with 4.5 years of experience specializing in the MERN stack and AI integrations to build scalable, enterprise-level applications.",
+  "Demonstrated expertise in architecting high-performance backend systems, developing generative AI microservices, and implementing Python-based automation frameworks at Amazon.",
+  "Adept at driving operational efficiency, transforming complex workflows into automated solutions, and delivering robust full-stack applications that optimize business processes."
 ];
 
 export const skills = [
+  "JavaScript (ES6+)",
   "TypeScript",
-  "Angular",
-  "React",
-  "Signals",
-  "RxJS",
-  "NgRx",
-  "NGXS",
-  "WebSockets",
-  "Nx",
-  "Microfrontends",
-  "Module Federation",
-  "Storybook",
-  "Playwright",
-  "OpenAI",
+  "Python",
+  "Java",
+  "SQL",
+  "React.js",
+  "React Hooks",
+  "Context API",
+  "HTML5/CSS3",
+  "Responsive UI",
+  "Node.js",
+  "Express.js",
+  "RESTful APIs",
+  "Microservices",
+  "Python (FastAPI/Flask)",
+  "Generative AI",
+  "OpenAI APIs",
+  "LLMs",
+  "Prompt Engineering",
+  "Data Engineering",
+  "MongoDB",
+  "PostgreSQL",
+  "Database Optimization",
+  "Schema Design",
+  "Git",
+  "Docker",
+  "CI/CD",
+  "GitHub Actions",
+  "AWS (EC2, S3)",
+  "Automation",
 ];
 
 export const experience = [
   {
-    title: "SS&C Technologies",
-    duration: "August 2025 – Present",
-    subtitle: "Senior Software Engineer",
-    details: [
-      "Architect scalable Angular applications in an Nx monorepo — modular libraries, lazy loading, OnPush change detection, and optimized state with NgRx.",
-      "Own secure API integration (JWT/Keycloak), route guards/interceptors, and delivery quality via unit and e2e testing in CI/CD pipelines.",
-    ],
-    tags: ["Angular", "Nx", "NgRx", "Keycloak", "Playwright"],
-    icon: "sack-dollar",
-  },
-  {
-    title: "Shiprocket Limited",
-    duration: "September 2023 – August 2025",
+    title: "Amazon",
+    duration: "Aug 2021 - Nov 2025",
     subtitle: "Software Engineer",
     details: [
-      "Led migration of 30+ high-traffic modules serving 300K+ active sellers from AngularJS to Angular 19 — full legacy analysis, gap resolution, and zero-downtime production rollout.",
-      "Built a ChatGPT-style courier rule engine with OpenAI, automating 20+ ops tasks; added global search with deep linking and keyboard shortcuts, cutting task time by 30%.",
-      "Co-authored the Shiprocket UI Design System (StencilJS + Storybook), reducing UI bugs 35% and halving feature delivery time across teams.",
+      "Accomplished a massive reduction in manual processing time, measured by a decrease from 480 minutes down to just 30 minutes per cycle, by engineering and distributing standalone Python automation applications (.exe) to business users.",
+      "Accomplished significant operational cost savings, measured by an estimated $10k in recovered administrative and engineering hours, by automating redundant enterprise workflows using advanced Python scripting.",
+      "Accomplished highly efficient reporting pipelines, measured by accelerated data retrieval and analysis for leadership reviews, by writing optimized SQL queries and managing advanced Excel aggregations.",
+      "Accomplished cross-functional technical alignment, measured by the rapid adoption of automated tools by internal stakeholders, by designing comprehensive technical presentations and system documentation."
     ],
-    tags: ["TypeScript", "Angular", "StencilJS", "Storybook", "OpenAI"],
-    icon: "truck-fast",
-  },
-  {
-    title: "Biofourmis India Pvt. Ltd.",
-    duration: "April 2022 – July 2023",
-    subtitle: "Software Engineer",
-    details: [
-      "Introduced Module Federation microfrontends, eliminating shared deployment blockers and enabling independent team releases.",
-      "Built multi-region deployment with dynamic API routing and failover for improved global latency.",
-      "Integrated Twilio Video and NGXS WebSockets for 24/7 real-time patient monitoring and synchronous team collaboration.",
-    ],
-    tags: ["Angular", "RxJS", "NGXS", "Module Federation", "WebSockets"],
-    icon: "heart-pulse",
-  },
-  {
-    title: "Novopay Solutions Pvt. Ltd.",
-    duration: "July 2020 – April 2022",
-    subtitle: "Software Engineer",
-    details: [
-      "Built Aadhaar-enabled banking modules (eKYC, withdrawal, balance inquiry) for 100K+ retail agents, enabling secure financial access in rural India.",
-      "Designed a QR-code wallet flow that reduced transaction failures and drove merchant adoption.",
-    ],
-    tags: ["JavaScript", "Angular", "Bootstrap"],
-    icon: "qrcode",
+    tags: ["Python", "Automation", "SQL", "Excel"],
+    icon: "briefcase",
   },
 ];
 
+export const projects = [
+    {
+    title: "OmniIntel - AI-Powered Enterprise SaaS",
+    subtitle: "Tech Stack: MongoDB, Express.js, React.js, Node.js, OpenAI API, Docker",
+    details: [
+        "Accomplished robust automated content generation, measured by seamless enterprise user adoption, by architecting a highly scalable MERN SaaS platform integrated directly with OpenAI LLMs.",
+        "Accomplished sub-second response times for complex AI text-generation, measured by API latency metrics, by optimizing database queries and implementing efficient RESTful APIs via Node.js microservices.",
+        "Accomplished secure and reliable platform scaling, measured by zero-downtime releases, by implementing CI/CD pipelines and JWT-based authentication."
+    ],
+    tags: ["MERN", "OpenAI", "SaaS", "Docker", "CI/CD"],
+    icon: "robot",
+  },
+  {
+    title: "DataStream Pro - Real-Time Analytics Platform",
+    subtitle: "Tech Stack: React.js, Node.js, Python Microservices, PostgreSQL, MongoDB",
+    details: [
+        "Accomplished high-volume data processing, measured by real-time throughput stability, by utilizing Node.js for the main API gateway and Python microservices for intensive data aggregation tasks.",
+        "Accomplished maximized database read/write performance, measured by optimized query speeds, by engineering a dual-database architecture leveraging MongoDB for unstructured logs and PostgreSQL for transactional data.",
+        "Accomplished enhanced operational visibility, measured by high user engagement, by designing an interactive frontend dashboard using React Hooks to render complex data visualizations."
+    ],
+    tags: ["React", "Node.js", "Python", "PostgreSQL", "MongoDB"],
+    icon: "chart-line",
+  },
+    {
+    title: "FlowState - Automated Workflow Management Tool",
+    subtitle: "Tech Stack: React (Hooks/Context), Node.js, Express.js, REST APIs, GitHub Actions",
+    details: [
+        "Accomplished streamlined business operations, measured by a reduction in manual data entry, by building a comprehensive web tool that acts as an automated proxy to synchronize data via third-party API integrations.",
+        "Accomplished seamless asynchronous user experiences, measured by application rendering speeds, by utilizing advanced state management in React to handle complex, multi-step inputs.",
+        "Accomplished exceptional code reliability, measured by a high test-pass rate, by establishing strict CI/CD workflows and performing comprehensive API endpoint testing."
+    ],
+    tags: ["React", "Node.js", "APIs", "GitHub Actions"],
+    icon: "cogs",
+  },
+]
+
+
 export const education = [
   {
-    title: "B.Tech. in Computer Science and Engineering",
-    duration: "2016 – 2020",
-    subtitle: "National Institute of Technology, Warangal",
+    title: "B.Tech. in Electronics & Telecommunication Engineering",
+    duration: "",
+    subtitle: "Bharati Vidyapeeth University, Pune",
     details: [],
     tags: [],
     icon: "graduation-cap",
   },
 ];
 
-export const adventures = [
-  {
-    title: "Treks Completed",
-    icon: "fa-solid fa-person-hiking",
-    accent: "green",
-    items: [
-      {
-        name: "Chandrashila Trek",
-        state: "Uttarakhand",
-        height: "13,123 ft",
-        duration: "3 Days",
-        level: "Moderate",
-      },
-      {
-        name: "Kedarkantha Trek",
-        state: "Uttarakhand",
-        height: "12,500 ft",
-        duration: "6 Days",
-        level: "Moderate",
-      },
-      {
-        name: "Kheerganga Trek",
-        state: "Himachal Pradesh",
-        height: "9,711 ft",
-        duration: "2 Days",
-        level: "Moderate",
-      },
-      {
-        name: "Jalori Pass Trek",
-        state: "Himachal Pradesh",
-        height: "10,800 ft",
-        duration: "1 Day",
-        level: "Easy",
-      },
-      {
-        name: "Triund Trek",
-        state: "Himachal Pradesh",
-        height: "9,350 ft",
-        duration: "2 Days",
-        level: "Easy",
-      },
-      {
-        name: "Shri Mata Vaishno Devi Trek",
-        state: "Jammu & Kashmir",
-        height: "5,200 ft",
-        duration: "2 Days",
-        level: "Easy",
-      },
-    ],
-  },
-  {
-    title: "Mountain Passes Explored",
-    icon: "fa-solid fa-road",
-    accent: "gold",
-    items: [
-      {
-        name: "Khardung La Pass",
-        state: "Ladakh",
-        height: "18,379 ft",
-      },
-      {
-        name: "Chang La Pass",
-        state: "Ladakh",
-        height: "17,590 ft",
-      },
-      {
-        name: "Tanglang La Pass",
-        state: "Ladakh",
-        height: "17,480 ft",
-      },
-      {
-        name: "Lachung La Pass",
-        state: "Ladakh",
-        height: "16,616 ft",
-      },
-      {
-        name: "Baralacha La Pass",
-        state: "Himachal Pradesh",
-        height: "16,040 ft",
-      },
-      {
-        name: "Nakeela Pass",
-        state: "Himachal Pradesh",
-        height: "15,547 ft",
-      },
-      {
-        name: "ZojiLa Pass",
-        state: "Jammu & Kashmir",
-        height: "11,575 ft",
-      },
-    ],
-  },
-];
+export const adventures = [];
 
 export const contact = [
   {
-    label: "vinaysomawat40@gmail.com",
-    link: "mailto:vinaysomawat40@gmail.com",
+    label: "manasrajdeep@outlook.com",
+    link: "mailto:manasrajdeep@outlook.com",
     icon: "fa-solid fa-envelope",
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/vinaysomawat/",
+    link: "https://linkedin.com/in/manasrajdeep",
     icon: "fa-brands fa-linkedin",
   },
   {
     label: "GitHub",
-    link: "https://github.com/vinaysomawat",
+    link: "https://github.com/manasrajdeep",
     icon: "fa-brands fa-github",
   },
-  {
-    label: "Medium",
-    link: "https://vinaysomawat.medium.com/",
-    icon: "fa-brands fa-medium",
+    {
+    label: "Website",
+    link: "https://manasrajdeep.in",
+    icon: "fa-solid fa-globe",
   },
 ];
 
 export const footer = [
   {
     label: "copyright-text",
-    data: ["Vinay Somawat · Senior Frontend Engineer"],
+    data: ["MANAS RAJDEEP · Software Engineer"],
   },
 ];

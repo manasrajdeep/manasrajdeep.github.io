@@ -2,7 +2,7 @@
 
 A zero-build, data-driven portfolio site using vanilla JavaScript ES modules and [lit-html](https://lit.dev/docs/libraries/standalone-templates/) for templating. All content is driven from a single data file — no framework, no bundler, no build step.
 
-**Live:** [vinaysomawat.github.io](https://vinaysomawat.github.io)
+**Live:** [manasrajdeep.in](https://manasrajdeep.in)
 
 ---
 
@@ -68,8 +68,8 @@ A zero-build, data-driven portfolio site using vanilla JavaScript ES modules and
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/vinaysomawat/vinaysomawat.github.io.git
-cd vinaysomawat.github.io
+git clone https://github.com/manasrajdeep/manasrajdeep.github.io.git
+cd manasrajdeep.github.io
 ```
 
 ### 2. Start a local HTTP server

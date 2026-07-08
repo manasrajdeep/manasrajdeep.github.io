@@ -15,7 +15,7 @@ function yearsOfExperience() {
 function buildStats() {
   const years = yearsOfExperience();
   return [
-    { value: years ? `${years}+` : "5+", label: "Years of experience" },
+    { value: years ? `${years}+` : "4+", label: "Years of experience" },
     { value: `${experience.length}`, label: "Companies shipped at scale" },
     { value: "300K+", label: "Sellers served by shipped modules" },
     { value: "35%", label: "Fewer UI bugs after design system rollout" },

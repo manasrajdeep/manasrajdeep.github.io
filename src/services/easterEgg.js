@@ -39,7 +39,7 @@ function initKonamiCode() {
 
 function logConsoleGreeting() {
   console.log(
-    "%c👋 Hey there.%c\nCurious enough to open devtools — I respect that.\nThis site is hand-built with vanilla JS + lit-html, no framework, no bundler.\nSource: https://github.com/vinaysomawat/vinaysomawat.github.io",
+    "%c👋 Hey there.%c\nCurious enough to open devtools — I respect that.\nThis site is hand-built with vanilla JS + lit-html, no framework, no bundler.\nSource: https://github.com/manasrajdeep/manasrajdeep.github.io",
     "font-size:20px;font-weight:700;color:#4F8CFF;",
     "font-size:13px;color:#9aa5b8;line-height:1.6;"
   );
