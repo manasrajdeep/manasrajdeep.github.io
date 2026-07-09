@@ -15,6 +15,6 @@ export const URLs = {
 // Web3Forms (https://web3forms.com) — free, no backend required. Access key is meant to be public;
 // it's rate-limited and domain-scoped on Web3Forms' side, not a secret.
 export const CONTACT_FORM_ENDPOINT = "https://api.web3forms.com/submit";
-export const WEB3FORMS_ACCESS_KEY = "04de7bfe-4646-41a5-bf54-d09e42b81582";
+export const WEB3FORMS_ACCESS_KEY = "384771d5-fbd1-4cd0-9d16-cf36827015f0";
 
 export const RESUME_URL = "./assets/resume.pdf"; // TODO: add resume.pdf to /assets

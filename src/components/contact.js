@@ -1,7 +1,10 @@
 import { html } from "https://unpkg.com/lit-html?module";
 import { mount } from "../utils/dom.js";
 import { contact } from "../../user-data/data.js";
-import { CONTACT_FORM_ENDPOINT, WEB3FORMS_ACCESS_KEY } from "../constants/urls.js";
+import {
+  CONTACT_FORM_ENDPOINT,
+  WEB3FORMS_ACCESS_KEY,
+} from "../constants/urls.js";
 
 const contactLink = (item) => html`
   <li>
@@ -12,9 +15,14 @@ const contactLink = (item) => html`
       class="contact-link glass glass-interactive magnetic ripple"
       aria-label="${item.label}"
     >
-      <span class="contact-link-icon"><i class="${item.icon}" aria-hidden="true"></i></span>
+      <span class="contact-link-icon"
+        ><i class="${item.icon}" aria-hidden="true"></i
+      ></span>
       <span class="contact-link-label">${item.label}</span>
-      <i class="fa-solid fa-arrow-up-right-from-square contact-link-go" aria-hidden="true"></i>
+      <i
+        class="fa-solid fa-arrow-up-right-from-square contact-link-go"
+        aria-hidden="true"
+      ></i>
     </a>
   </li>
 `;
@@ -38,25 +46,52 @@ const contactTemplate = () => html`
     <form class="contact-form glass" id="contactForm" data-reveal novalidate>
       <div class="form-field">
         <label for="contactName">Name</label>
-        <input type="text" id="contactName" name="name" autocomplete="name" required />
+        <input
+          type="text"
+          id="contactName"
+          name="name"
+          autocomplete="name"
+          required
+        />
         <p class="form-error" id="contactNameError" role="alert"></p>
       </div>
       <div class="form-field">
         <label for="contactEmail">Email</label>
-        <input type="email" id="contactEmail" name="email" autocomplete="email" required />
+        <input
+          type="email"
+          id="contactEmail"
+          name="email"
+          autocomplete="email"
+          required
+        />
         <p class="form-error" id="contactEmailError" role="alert"></p>
       </div>
       <div class="form-field">
         <label for="contactSubject">Subject</label>
-        <input type="text" id="contactSubject" name="subject" autocomplete="off" required />
+        <input
+          type="text"
+          id="contactSubject"
+          name="subject"
+          autocomplete="off"
+          required
+        />
         <p class="form-error" id="contactSubjectError" role="alert"></p>
       </div>
       <div class="form-field">
         <label for="contactMessage">Message</label>
-        <textarea id="contactMessage" name="message" rows="4" required></textarea>
+        <textarea
+          id="contactMessage"
+          name="message"
+          rows="4"
+          required
+        ></textarea>
         <p class="form-error" id="contactMessageError" role="alert"></p>
       </div>
-      <button type="submit" class="btn btn-primary magnetic ripple form-submit" id="contactSubmit">
+      <button
+        type="submit"
+        class="btn btn-primary magnetic ripple form-submit"
+        id="contactSubmit"
+      >
         <span class="form-submit-label">Send Message</span>
         <i class="fa-solid fa-spinner form-spinner" aria-hidden="true"></i>
       </button>
@@ -70,15 +105,25 @@ export function mountContact() {
 }
 
 const FIELDS = {
-  contactName: { errorId: "contactNameError", validate: (v) => (v.trim() ? "" : "Please enter your name.") },
+  contactName: {
+    errorId: "contactNameError",
+    validate: (v) => (v.trim() ? "" : "Please enter your name."),
+  },
   contactEmail: {
     errorId: "contactEmailError",
-    validate: (v) => (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Enter a valid email address."),
+    validate: (v) =>
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())
+        ? ""
+        : "Enter a valid email address.",
   },
-  contactSubject: { errorId: "contactSubjectError", validate: (v) => (v.trim() ? "" : "Please enter a subject.") },
+  contactSubject: {
+    errorId: "contactSubjectError",
+    validate: (v) => (v.trim() ? "" : "Please enter a subject."),
+  },
   contactMessage: {
     errorId: "contactMessageError",
-    validate: (v) => (v.trim().length >= 10 ? "" : "Message should be at least 10 characters."),
+    validate: (v) =>
+      v.trim().length >= 10 ? "" : "Message should be at least 10 characters.",
   },
 };
 
@@ -112,7 +157,9 @@ export function initContactForm() {
     submitBtn.disabled = true;
     status.textContent = "";
 
-    const [name, email, subject, message] = inputs.map((input) => input.value.trim());
+    const [name, email, subject, message] = inputs.map((input) =>
+      input.value.trim(),
+    );
 
     try {
       if (CONTACT_FORM_ENDPOINT) {
@@ -140,7 +187,8 @@ export function initContactForm() {
       status.textContent = "Thanks — your message is on its way.";
       form.reset();
     } catch {
-      status.textContent = "Something went wrong. Please email me directly instead.";
+      status.textContent =
+        "Something went wrong. Please email me directly instead.";
     } finally {
       submitBtn.classList.remove("is-loading");
       submitBtn.disabled = false;
